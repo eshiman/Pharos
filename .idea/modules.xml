@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../GridWorld/.idea/GridWorld.iml" filepath="$PROJECT_DIR$/../GridWorld/.idea/GridWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Pharos.iml" filepath="$PROJECT_DIR$/.idea/Pharos.iml" />
+    </modules>
+  </component>
+</project>
