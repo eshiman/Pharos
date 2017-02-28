@@ -1,0 +1,19 @@
+{
+  "name": "pharos",
+  "version": "0.1.0",
+  "description": "A system that identifies the location of swimmers using UWB signal technology and records their time spent underwater.",
+  "main": "main.js",
+  "repository": "git@github.com:eshiman/Pharos.git",
+  "author": "Jeremy Savarin <jeremy.savarin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^1.4.15"
+  },
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-plugin-react": "^6.10.0"
+  }
+}
