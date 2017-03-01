@@ -4,7 +4,7 @@
 
 import React, { Component } from 'react';
 
-import { connect } from 'react-redux';
+import { Jumbotron } from 'react-bootstrap';
 
 export default class Greeting extends Component {
     renderGreeting() {
@@ -17,6 +17,9 @@ export default class Greeting extends Component {
         return (
             <div className="greeting">
                 {this.renderGreeting()}
+                <Jumbotron>
+                    <h2 className="text-center">Hello this is where the monitor will be!</h2>
+                </Jumbotron>
             </div>
         );
     }

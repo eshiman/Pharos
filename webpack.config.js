@@ -23,14 +23,15 @@ module.exports = {
         rules: [{
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-                presets: ['react', 'es2015']
-            }
+            loaders: ['react-hot-loader', 'babel-loader']
         }, {
             test: /\.scss?$/,
             exclude: /node_modules/,
             loader: 'style-loader!css-loader!sass-loader'
+        }, {
+            test: /\.(gif|png|jpe?g|svg)$/i,
+            exclude: /node_modules/,
+            loaders: ['file-loader', 'image-webpack-loader']
         }]
     },
     plugins: [
