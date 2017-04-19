@@ -7,13 +7,13 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './components/app';
-import Greeting from './components/greeting';
+import Grid from './components/grid';
 
 const DEV_ROUTE = '/';
 const ELECTRON_ROUTE = '/home/jeremy/Documents/Projects/Pharos/dist/index.html';
 
 export default (
-    <Route path={ELECTRON_ROUTE} component={App}>
-        <IndexRoute component={Greeting}/>
+    <Route path={DEV_ROUTE} component={App}>
+        <IndexRoute component={Grid}/>
     </Route>
 );

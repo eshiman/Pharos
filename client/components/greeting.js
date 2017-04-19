@@ -1,10 +1,12 @@
-// greeting.js
-// Author: Jeremy Savarin
-// Biosensors LabView Control Panel
+// client/components/greeting.js
+// Capstone Design ECE - Pharos
+// Authors: Abbas Furniturewalla, Jeremy Savarin, Esther Shimanovich
 
 import React, { Component } from 'react';
 
 import { Jumbotron } from 'react-bootstrap';
+
+import Grid from './grid';
 
 export default class Greeting extends Component {
     renderGreeting() {
@@ -15,11 +17,12 @@ export default class Greeting extends Component {
 
     render() {
         return (
-            <div className="greeting">
-                {this.renderGreeting()}
-                <Jumbotron>
-                    <h2 className="text-center">Hello this is where the monitor will be!</h2>
-                </Jumbotron>
+            <div className="container-fluid greeting">
+                <div className="row">
+                    <div className="col-lg-6">
+                        {this.renderGreeting()}
+                    </div>
+                </div>
             </div>
         );
     }
