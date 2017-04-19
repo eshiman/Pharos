@@ -1,15 +1,21 @@
 * {
     font-family: 'Dosis', sans-serif;
+    font-size: 100%;
 }
 
 body {
     background: url('../img/ocean.jpg') no-repeat center center fixed;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .greeting {
     padding-top: 10%;
+    padding-bottom: 10%; 
+}
+
+.grid {
+    background: white;
 }
 
 .footer {
