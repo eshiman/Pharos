@@ -8,7 +8,14 @@ const serialport = require('serialport');
 const router = express.Router();
 const SerialPort = serialport.SerialPort;
 
-const PORT_NAME = '/dev/ttyUSB0';
+var PORT_NAME;
+// Different port for different platform
+if (process.platform === 'linux') {
+    PORT_NAME = '/dev/ttyUSB0';
+} else if (process.platform === 'win32') {
+    PORT_NAME = 'COM3';
+} 
+
 const BAUD_RATE = 9600;
 
 const serial = new SerialPort(PORT_NAME, {
