@@ -16,7 +16,7 @@ if (process.platform === 'linux') {
     PORT_NAME = 'COM3';
 } 
 
-const BAUD_RATE = 9600;
+const BAUD_RATE = 115200;
 
 const serial = new SerialPort(PORT_NAME, {
     baudrate: BAUD_RATE,
@@ -34,7 +34,7 @@ serial.on('open', () => {
     });
 });
 
-router.post('/query', (req, res) => {
+router.get('/query', (req, res) => {
     return res.json({
         serialData
     });

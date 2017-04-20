@@ -30,14 +30,7 @@ export class Grid extends Component {
             <div className="container-fluid grid text-center">
                 <div className="row">
                     <div className="col-lg-12">
-                        <ScatterChart
-                            data={gridData}
-                            title="Swimmer location"
-                            xAxisLabel="x-distance from main anchor (m)"
-                            yAxisLabel="y-distance from main anchor (m)"
-                            gridHorizontal={true}
-                            gridVertical={true}
-                        />
+                        {gridData}
                         <button className="btn btn-success"
                             onClick={this.update.bind(this)}>Update location</button>
                     </div>
