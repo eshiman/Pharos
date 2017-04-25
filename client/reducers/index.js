@@ -17,7 +17,7 @@ const rootReducer = combineReducers({
 export function updateLocationReducer(state = {}, action) {
     switch (action.type) {
     case UPDATE_LOCATION:
-        return { ...state, gridData: action.payload };
+        return { ...state, gridData: action.payload.serialData };
     default:
         return state;
     }
