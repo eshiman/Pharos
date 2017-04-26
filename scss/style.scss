@@ -11,11 +11,17 @@ body {
 
 .greeting {
     padding-top: 10%;
-    padding-bottom: 10%; 
+    padding-bottom: 10%;
+}
+
+.distance {
+    font-size: 500%;
 }
 
 .grid {
-    background: white;
+   background: white;
+   width: 400px;
+   height: 400px;
 }
 
 .footer {

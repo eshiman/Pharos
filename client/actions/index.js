@@ -18,6 +18,7 @@ export function updateLocation() {
     return (dispatch) => {
         return axios.get(url)
             .then((res) => {
+                console.log(res.data);
                 dispatch({
                     type: UPDATE_LOCATION,
                     payload: res.data

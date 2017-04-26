@@ -19,7 +19,7 @@ export default class Greeting extends Component {
         return (
             <div className="container-fluid greeting">
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-lg-offset-3">
                         {this.renderGreeting()}
                     </div>
                 </div>

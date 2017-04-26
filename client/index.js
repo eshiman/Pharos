@@ -25,6 +25,8 @@ import reducers from './reducers';
 // App stylesheet
 import '../scss/style.scss';
 
+import 'chart.js';
+
 // Create store w/ middleware
 const store = createStore(reducers, applyMiddleware(reduxThunk));
 
